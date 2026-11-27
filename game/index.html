@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash — Turkey's Great Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #201209; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  }
+  #wrap {
+    width: min(100vw, 177.78vh);
+    aspect-ratio: 16 / 9;
+    position: relative;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  canvas { display: block; width: 100%; height: 100%; background: #f7c873; }
+  #foot {
+    position: absolute; left: 0; right: 0; bottom: -26px;
+    text-align: center; color: #c9a06a; font-size: 12px; letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="foot">GOBBLE DASH &middot; a turkey escape game &middot; SPACE jump &middot; DOWN slide &middot; SHIFT dash &middot; P pause &middot; M mute</div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
